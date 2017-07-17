@@ -1,6 +1,10 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+import logging
+import os
+import psutil
+
 
 def writeLockfile(lockfilepath):
   pid = os.getpid()
@@ -30,6 +34,7 @@ def checkpid(lockfilepath):
       logging.error('IL PROCESSO {} È ANCORA IN ESECUZIONE!!!'.format(pid))
 
   return exist_status
+
 
 def deleteLockfile(lockfilepath):
   os.remove(lockfilepath)
