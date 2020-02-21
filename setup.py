@@ -4,15 +4,15 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setup(
-      name='pypid',
-      version='0.10.2',
+      name='pypidfile',
+      version='0.0.2',
       url='https://github.com/pietrogiuffrida/pypidfile/',
       author='Pietro Giuffrida',
       author_email='pietro.giuffri@gmail.com',
       license='MIT',
       packages=['pypidfile'],
       zip_safe=False,
-      install_requires=["^psutil-5.7.0"],
+      install_requires=["psutil>=5.7.0"],
       classifiers=[
             "Programming Language :: Python :: 3",
             "License :: OSI Approved :: MIT License",
